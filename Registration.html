@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Soft gradient */
+      margin: 0;
+    }
+    form {
+      background: #ffffffcc; /* Slightly transparent white */
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 380px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.2s ease-in-out;
+    }
+    form:hover {
+      transform: scale(1.02); /* Slight hover zoom */
+    }
+    form h2 { 
+      text-align: center; 
+      color: #333;
+      margin-bottom: 20px;
+    }
+    label { 
+      display: block; 
+      margin-top: 12px; 
+      font-weight: 600; 
+      color: #444;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #4facfe;
+      box-shadow: 0 0 6px rgba(79,172,254,0.6);
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 6px;
+    }
+    .option-group {
+      margin-top: 6px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    input[type="submit"] {
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      color: #fff;
+      cursor: pointer;
+      margin-top: 18px;
+      font-size: 16px;
+      border: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+      background: linear-gradient(135deg, #38f9d7, #43e97b);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <form action="response.html" method="get">
+    <h2>Registration Form</h2>
+    
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password" required>
+
+    <label for="cpass">Confirm Password</label>
+    <input type="password" id="cpass" name="confirm_password" required>
+
+    <label>Gender</label>
+    <div class="option-group">
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+
+    <label>Hobbies</label>
+    <div class="option-group">
+      <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+      <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+      <label><input type="checkbox" name="hobbies" value="Music"> Music</label>
+      <label><input type="checkbox" name="hobbies" value="Travel"> Travel</label>
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+      <option>Australia</option>
+    </select>
+
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
