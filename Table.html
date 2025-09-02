@@ -1,0 +1,242 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <h3> This my project on CSK VS MI Comparision.</h3>
+  <title>MI vs CSK Comparison</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0066cc;
+      padding: 20px;
+      font-style: italic;
+      font-size: 36px;
+      background-color: #e0f2ff;
+    }
+
+    p {
+      text-align: center;
+      background: #dff5ff;
+      font-size: 20px;
+      color: #1a1a1a;
+      padding: 10px;
+      margin: 0;
+      border-top: 1px solid #cceeff;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #ffffff;
+      width: 80%;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 153, 255, 0.1);
+      color: #333;
+      margin-bottom: 50px;
+    }
+
+    th, td {
+      border: 1px solid #d6f0ff;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #b3e5fc;
+      color: #003366;
+    }
+
+    tr:nth-child(even) td {
+      background: #f2fbff;
+    }
+
+    tr:hover td {
+      background: #e8f7ff;
+      transition: background 0.3s;
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+
+    form {
+      width: 60%;
+      margin: 30px auto;
+      background: #eaf9ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 153, 255, 0.15);
+      color: #004466;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, button {
+      width: 60%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #aacbe0;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #00b894;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #26d7b9;
+    }
+
+    li {
+      font-size: 18px;
+      padding: 5px 0;
+      text-align: left;
+    }
+
+    .media-section {
+      text-align: center;
+      margin: 40px 20px;
+      background: #f0fbff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .media-section p {
+      background: none;
+      color: #005073;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      margin: 30px 0;
+      color: #666;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>MI vs CSK - Comparison</h2>
+
+  <table>
+    <tr>
+      <th>Teams</th>
+      <td><img src="./MI.png" alt="MI Logo"></td>
+      <td><img src="./CSK.png" alt="CSK Logo"></td>
+    </tr>
+    <tr><td>Titles Won</td><td>5</td><td>5</td></tr>
+    <tr><td>Finals Played</td><td>6</td><td>10</td></tr>
+    <tr><td>Win %</td><td>56.7%</td><td>58.4%</td></tr>
+    <tr><td>Top Run Scorer</td><td>Rohit</td><td>Dhoni</td></tr>
+    <tr><td>Top Wicket Taker</td><td>Malinga</td><td>Bravo</td></tr>
+    <tr><td>Captain (2025)</td><td>Hardik Pandya</td><td>Ruturaj Gaikwad</td></tr>
+    <tr>
+      <td>Most Popular Players</td>
+      <td>
+        <ul>
+          <li>Sachin</li>
+          <li>Rohit</li>
+          <li>Pollard</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Dhoni</li>
+          <li>Raina</li>
+          <li>Jadeja</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <form action="#" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="team">Choose your favorite team:</label>
+    <select id="team" name="team" required>
+      <option value="">--Select a Team--</option>
+      <option value="MI">Mumbai Indians (MI)</option>
+      <option value="CSK">Chennai Super Kings (CSK)</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>Note: The above data is based on IPL records as of 2025.</p>
+  <p>For more details, visit the official IPL website:</p>
+  <p><a href="https://www.iplt20.com/" target="_blank">IPL Official Website</a></p>
+
+  <div class="media-section">
+    <p>Theme Song of CSK (Chennai Super Kings):</p>
+    <audio controls>
+      <source src="" type="audio/mpeg"csk_team_song.mp3>
+    </audio>
+  </div>
+
+  <div class="media-section">
+    <p>Theme Song of MI (Mumbai Indians):</p>
+    <audio controls>
+      <source src="csk_team_song.mp3" type="audio/mpeg">
+
+    </audio>
+  </div>
+
+  <div class="media-section">
+    <p>Some Glimpses of the Rivalry:</p>
+    <video width="320" height="240" controls>
+      <source src="csk-mi-final.mp4" type="video/mp4">
+      
+    </video>
+  </div>
+
+  <div class="footer">
+    Source: <a href="https://www.sportskeeda.com/cricket/mi-vs-csk-head-to-head-record-in-ipl" target="_blank">Sportskeeda</a>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
